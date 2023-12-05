@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Run on Android API 34",
+            "type": "android-app",
+            "workingDir": "$PROJECT_DIR$",
+            "allowParallelRun": true,
+            "module": "Pokedex.composeApp.main",
+            "destination": "Medium Phone API 34"
+        },
+        {
+            "name": "Run on Desktop",
+            "type": "gradle",
+            "tasks": ["composeApp:run"],
+        },
+        {
+            "name": "Run on iPhone 15 Pro",
+            "type": "xcode-app",
+            "workingDir": "$PROJECT_DIR$",
+            "buildTarget": {
+                "project": "iosApp",
+                "target": "iosApp"
+            },
+            "configuration": "Debug",
+            "destination": "iPhone 15 Pro | iOS 17.0"
+        }
+    ]
+}
