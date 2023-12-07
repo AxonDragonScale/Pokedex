@@ -1,3 +1,4 @@
 {
-    "backend.maxHeapSizeMb": 2048
+    "backend.maxHeapSizeMb": 2048,
+    "editor.guides": [100]
 }

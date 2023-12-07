@@ -23,6 +23,20 @@
             },
             "configuration": "Debug",
             "destination": "iPhone 15 Pro | iOS 17.0"
+        },
+        {
+            "name": "Run on browser",
+            "type": "gradle",
+            "workingDir": "$PROJECT_DIR$",
+            "tasks": [
+                "composeApp:wasmJsBrowserRun"
+            ],
+            "args": [
+                ""
+            ],
+            "initScripts": {
+                "flmapper": "ext.mapPath = { path -> null }"
+            }
         }
     ]
 }
