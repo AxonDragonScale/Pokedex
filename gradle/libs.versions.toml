@@ -1,0 +1,65 @@
+[versions]
+# Plugin Versions
+androidGradlePlugin = "8.3.1"
+kotlin = "1.9.23"
+ksp = "1.9.23-1.0.19"
+
+# Build Versions
+applicationId = "com.axondragonscale.pokedex"
+compileSdk = "34"
+minSdk = "26"
+targetSdk = "34"
+composeCompiler = "1.5.11"
+versionCode = "100"
+versionName = "1.0.0"
+
+# Dependencies
+activityCompose = "1.8.2"
+androidxLifecycle = "2.7.0"
+composeBom = "2024.03.00"
+coreKtx = "1.12.0"
+datastorePrefs = "1.0.0"
+daggerHilt = "2.50"
+androidxHilt = "1.2.0"
+junit = "4.13.2"
+room = "2.6.1"
+work = "2.9.0"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+datastore-prefs = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePrefs" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "daggerHilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "daggerHilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidxHilt" }
+hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "androidxHilt" }
+hilt-work-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidxHilt" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+junit = { module = "junit:junit", version.ref = "junit" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+[bundles]
+compose = ["compose-ui", "compose-ui-graphics", "compose-ui-tooling-preview", "compose-material3", "compose-material-icons-extended"]
+composeDebug = ["compose-ui-tooling", "compose-ui-test-manifest"]
+hilt = ["hilt-android", "hilt-navigation-compose", "hilt-work"]
+hiltKsp = ["hilt-android-compiler", "hilt-work-compiler"]
+lifecycle = ["lifecycle-runtime-ktx", "lifecycle-runtime-compose"]
+room = ["room-runtime", "room-ktx"]
