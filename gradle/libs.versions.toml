@@ -19,6 +19,7 @@ versionName = "1.0.0"
 # Dependencies
 activityCompose = "1.8.2"
 androidxLifecycle = "2.7.0"
+chucker = "4.0.0"
 composeBom = "2024.03.00"
 firebaseBom = "32.8.0"
 coreKtx = "1.12.0"
@@ -26,6 +27,7 @@ datastorePrefs = "1.0.0"
 daggerHilt = "2.50"
 androidxHilt = "1.2.0"
 junit = "4.13.2"
+retrofit = "2.10.0"
 room = "2.6.1"
 work = "2.9.0"
 
@@ -40,6 +42,8 @@ hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", ve
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidxHilt" }
 hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "androidxHilt" }
 hilt-work-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidxHilt" }
+chucker = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
+chucker-noop = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
@@ -53,6 +57,7 @@ firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
 firebase-perf = { module = "com.google.firebase:firebase-perf" }
 junit = { module = "junit:junit", version.ref = "junit" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }

@@ -85,5 +85,9 @@ dependencies {
     implementation(libs.bundles.room)
     ksp(libs.room.compiler)
 
+    implementation(libs.retrofit)
+    debugImplementation(libs.chucker)
+    releaseImplementation(libs.chucker.noop)
+
     testImplementation(libs.junit)
 }
