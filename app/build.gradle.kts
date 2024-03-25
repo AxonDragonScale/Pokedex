@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.google.services)
@@ -70,8 +71,6 @@ dependencies {
 
     implementation(libs.bundles.lifecycle)
 
-    implementation(libs.work.runtime)
-
     implementation(platform(libs.compose.bom))
     implementation(libs.bundles.compose)
     debugImplementation(libs.bundles.composeDebug)
@@ -85,7 +84,9 @@ dependencies {
     implementation(libs.bundles.room)
     ksp(libs.room.compiler)
 
-    implementation(libs.retrofit)
+    implementation(libs.bundles.retrofit)
+    implementation(libs.kotlinx.serialization)
+
     debugImplementation(libs.chucker)
     releaseImplementation(libs.chucker.noop)
 
