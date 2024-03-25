@@ -3,6 +3,9 @@
 androidGradlePlugin = "8.3.1"
 kotlin = "1.9.23"
 ksp = "1.9.23-1.0.19"
+googleServices = "4.4.1"
+firebaseCrashlytics = "2.9.9"
+firebasePerf = "1.4.2"
 
 # Build Versions
 applicationId = "com.axondragonscale.pokedex"
@@ -17,6 +20,7 @@ versionName = "1.0.0"
 activityCompose = "1.8.2"
 androidxLifecycle = "2.7.0"
 composeBom = "2024.03.00"
+firebaseBom = "32.8.0"
 coreKtx = "1.12.0"
 datastorePrefs = "1.0.0"
 daggerHilt = "2.50"
@@ -44,6 +48,10 @@ compose-material3 = { module = "androidx.compose.material3:material3" }
 compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+firebase-perf = { module = "com.google.firebase:firebase-perf" }
 junit = { module = "junit:junit", version.ref = "junit" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
@@ -55,6 +63,9 @@ android-application = { id = "com.android.application", version.ref = "androidGr
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlytics" }
+firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "firebasePerf" }
 
 [bundles]
 compose = ["compose-ui", "compose-ui-graphics", "compose-ui-tooling-preview", "compose-material3", "compose-material-icons-extended"]
@@ -63,3 +74,4 @@ hilt = ["hilt-android", "hilt-navigation-compose", "hilt-work"]
 hiltKsp = ["hilt-android-compiler", "hilt-work-compiler"]
 lifecycle = ["lifecycle-runtime-ktx", "lifecycle-runtime-compose"]
 room = ["room-runtime", "room-ktx"]
+firebase = ["firebase-analytics", "firebase-crashlytics", "firebase-perf"]

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326583258952",
+    "project_id": "pokedex-d6c7c",
+    "storage_bucket": "pokedex-d6c7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326583258952:android:3d3bbc34c39c2128b7ed7d",
+        "android_client_info": {
+          "package_name": "com.axondragonscale.pokedex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-7Qmc1uGdLPI_Luksak9-JoLlVNUvJuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
