@@ -30,7 +30,6 @@ junit = "4.13.2"
 kotlinxSerialization = "1.6.3"
 retrofit = "2.10.0"
 room = "2.6.1"
-work = "2.9.0"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
@@ -41,8 +40,6 @@ lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-com
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "daggerHilt" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "daggerHilt" }
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidxHilt" }
-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "androidxHilt" }
-hilt-work-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidxHilt" }
 chucker = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
 chucker-noop = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
@@ -64,7 +61,6 @@ retrofit-serialization = { module = "com.squareup.retrofit2:converter-kotlinx-se
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
-work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -79,8 +75,8 @@ firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "fireb
 [bundles]
 compose = ["compose-ui", "compose-ui-graphics", "compose-ui-tooling-preview", "compose-material3", "compose-material-icons-extended"]
 composeDebug = ["compose-ui-tooling", "compose-ui-test-manifest"]
-hilt = ["hilt-android", "hilt-navigation-compose", "hilt-work"]
-hiltKsp = ["hilt-android-compiler", "hilt-work-compiler"]
+hilt = ["hilt-android", "hilt-navigation-compose"]
+hiltKsp = ["hilt-android-compiler"]
 lifecycle = ["lifecycle-runtime-ktx", "lifecycle-runtime-compose"]
 room = ["room-runtime", "room-ktx"]
 firebase = ["firebase-analytics", "firebase-crashlytics", "firebase-perf"]
