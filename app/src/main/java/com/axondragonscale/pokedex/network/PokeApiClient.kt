@@ -15,7 +15,7 @@ import javax.inject.Singleton
  * Created by Ronak Harkhani on 26/03/24
  */
 
-private const val BASE_URL = "https://pokeapi.co/api/v2/"
+const val BASE_URL = "https://pokeapi.co/api/v2/"
 
 @Singleton
 class PokeApiClient @Inject constructor(

@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.axondragonscale.pokedex.repository.PokemonRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -17,7 +18,7 @@ class HomeVM @Inject constructor(
 
     private var id = 35
 
-    fun getPokemon() = viewModelScope.launch {
+    fun getPokemon() = viewModelScope.launch(Dispatchers.IO) {
         val pokemon = pokemonRepository.getPokemon(id++)
         println("zeref - $pokemon")
     }
